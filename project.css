@@ -1,0 +1,526 @@
+/* Basic Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+}
+
+h2 {
+    padding: 1.5% 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    color: #14213d;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    line-height: 2;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    color: #000000;
+}
+
+article h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
+    color: #14213d;
+    margin-bottom: 2%;
+}
+
+article img {
+    height: 250px;
+    margin: 0 4% 4% 4%;
+    border-radius: 1px;
+}
+
+article p {
+    border-radius: 25px;
+    height: auto;
+}
+
+form {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    color: #FCA311;
+}
+
+input {
+    width: 100%;
+    padding: 1em;
+}
+
+form p {
+    margin: 0;
+}
+
+form #mySubmit {
+    grid-column: 1/3;
+    width: 206%;
+    padding: 1em;
+    border: 0;
+    color: #14213d;
+    background-color: #E5E5E5;
+    text-transform: uppercase;
+}
+
+form #mySubmit:hover {
+    background-color: #14213d;
+    color: #FCA311;
+    cursor: pointer;
+    outline: 0;
+    height: 100%;
+    transition: 300ms ease-out;
+}
+
+iframe, #twitch-embed {
+    margin-top: 10px;
+    width: 100%;
+}
+
+footer {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FEFFFE;
+    background-color: #14213d;
+    border-top: 5px solid #FCA311;
+}
+
+/* Header Styles */
+
+.header{
+    padding: 30px 5%;
+    background-color: #14213d;
+    border-bottom: 5px solid #FCA311;
+}
+
+.header a {
+    color: #FEFFFE;
+}
+
+.header a:hover {
+    color: #FCA311;
+    transition: ease-out 200ms;
+    text-decoration: none;
+}
+
+.header a:active {
+    color: #FCA311;
+}
+
+.header .logo {
+    font-size: 3rem;
+}
+
+.nav-links {
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 22px;
+    list-style: none;
+    height: auto;
+    justify-content: center;
+}
+
+/* Hero Page */
+
+.hero {
+    min-height: 100vh;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 300px;
+    color: #FEFFFE;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+}
+
+.hero-text h1 {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 5rem;
+}
+
+.hero-text div {
+    border-left: 3px solid #E5E5E5;
+    height: 300px;
+}
+
+.hero-text span {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+/* Article Pages */
+
+.content {
+    max-width: 1500px;
+    padding: 0 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+.text-area {
+    background-color: #ffffff;
+    padding: 2em 10%;
+}
+
+.text-area h3 {
+    margin-top: 1em;
+}
+
+.text-area h3 a {
+    color: #14213d;
+}
+
+.text-area h3 a:hover {
+    color: #FCA311;
+    transition: ease-out 200ms;
+}
+
+.text-area table {
+    margin-top: 2%;
+    width: 100%;
+    padding: 30px 0;
+    border-collapse: collapse;
+}
+
+.text-area table tr {
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.text-area table td, th {
+    padding: 20px;
+}
+
+.textarea table th {
+    color: #FCA311;
+}
+
+.text-area p a {
+    color: #14213d;
+}
+
+.text-area p a:hover {
+    color: #FCA311;
+    transition: ease-out 200ms;
+}
+
+/* Grid Pages */
+
+.gallery {
+    display: grid;
+    grid-gap: 75px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #ffffff;
+    padding: 2em 10% 4em 10%;
+}
+
+.team {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.team figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.team figure img {
+    position: relative;
+    z-index: 999;
+    transition: transform 0.4s;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    background-color: #FEFFFE;
+}
+
+.team figure:hover img {
+    transform: translateY(-90px);
+    transition: ease-out 200ms;
+}
+
+.team figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    height: 100px;
+    background-color: #14213d;
+    color: #FCA311;
+    width: 100%;
+}
+
+.team h3 {
+    color: #FCA311;
+    text-align: left;
+}
+
+.team p {
+    margin: 0 0;
+}
+
+/* Box Pages */
+
+.large-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 10% 2em 10%;
+    width: 100%;
+    background-color: #FEFFFE;
+}
+
+.large-box h2 {
+    font-size: 1.75em;
+}
+
+.large-box h3 {
+    margin: 1% 0;
+}
+
+.large-box a {
+    color:#FEFFFE;
+}
+
+.large-box a:hover {
+    color: #FEFFFE;
+    transition: ease-out 200ms;
+}
+
+.waytowatch {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin: 4% 0;
+}
+
+.waytowatch p a {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* Classes */
+
+.title {
+    font-family: 'Mr Dafoe', cursive;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #FCA311;
+    text-align: center;
+    margin: 2vh 0;
+    word-spacing: 15px;
+}
+
+.subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+    background-color: #FEFFFE;
+    padding: 2em 3em 0 3em;
+}
+
+.left {
+    float: left;
+    margin-left: 0;
+    box-shadow: 5px 5px #FCA311;
+}
+
+.right {
+    float: right;
+    margin-right: 0;
+    box-shadow: 5px 5px #FCA311;
+}
+
+.logo {
+    font-family: 'Mr Dafoe', cursive;
+    height: auto;
+}
+
+/* Ids */
+
+#twitch {
+    background-image: linear-gradient(#6214ac, #8d17d1);
+    padding: 2.5%;
+    color: #ffffff;
+}
+
+#youtube {
+    background-image: linear-gradient(#800808, #da1414);
+    padding: 2.5%;
+    color: #ffffff;
+}
+
+#reddit {
+    background-image: linear-gradient(#FF4500, #FF4500);
+    padding: 2.5%;
+    color: #ffffff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#discord {
+    background-image: linear-gradient(#5e7ef1,#7289DA);
+    padding: 2.5%;
+    color: #ffffff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+#last {
+    margin: 1% auto;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1050px) {
+    .header{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: block;
+        margin: 0;
+        width: auto;
+        padding-top: 0;
+    }
+
+    .nav-links ul {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: .2em;
+    }
+
+    .nav-links li {
+        display: block;
+    }
+
+    .hero-text {
+        display: block;
+        text-align: center;
+        margin: 100px 0 150px;
+    }
+
+    .hero-text h2 {
+        margin-top: 0;
+    }
+
+    #hero-line {
+        display: block;
+        transform: rotate(90deg);
+        width: 0;
+        margin: auto;
+        padding: 0;
+    }
+
+    article {
+        display: block;
+        width: 100%;
+    }
+
+    .content {
+       max-width: 1050px;
+       display: block;
+    }
+
+    .text-area {
+        display: block;
+    }
+
+    
+    .text-area h2 {
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin: 0 0 4% 0;
+        float: none;
+    }
+
+    .gallery{
+        display: block;
+        width: 100%;
+    }
+
+    .team {
+        width: 80%;
+        margin: 0 auto 20% auto;
+    }
+
+    .waytowatch {
+        width: 100%;
+        margin: 0 auto 10% auto;
+    }
+
+    .waytowatch h2, h3 {
+        text-align: center;
+    }
+
+    iframe, #twitch-embed {
+        display: block;
+    }
+}

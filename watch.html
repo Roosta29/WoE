@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of Esports</title>
+    <link rel="stylesheet" href="project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&family=Mr+Dafoe&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="nav-links">
+            <h1 class="logo"><a href="index.html">WoE</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="leagues.html">Leagues</a></li>
+                <li><a href="ecosystem.html">Ecosystem</a></li>
+                <li><a href="watch.html">Watch</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="content">
+        <h1 class="title">Watch Esports</h1>
+        <h2 class="subtitle">Wanna check out what all the hype is about? No better way then watching in your own home.
+            With streaming platforms like Twitch and Youtube, it make browing mutiple games easy.
+        </h2>
+        <div class="large-box">
+            <section class="waytowatch" id="twitch">
+                <img src="img/twitch-overlay.jpg" width="100%" />
+                <h2><a href="https://www.twitch.tv/" target="_blank">Twitch</a></h2>
+                <p>When most people think about live esports streaming, they think of Twitch. Twitch has the most
+                    concurrent
+                    streamers and tournaments by far and offers the most variation of gaming titles to watch. It’s
+                    common
+                    for esports titles like League of Legends, Fortnite and CS:GO to have the top viewing spots, with
+                    over
+                    100,000 concurrent fans watching and cheering along at any one time.
+                    <br><br>
+                    Twitch is the top streaming platform in eSports, per eCharts, for a reason. It really
+                    started as the foundation for live
+                    streaming tournaments and games, which is a big reason for its popularity today. Whether you want to
+                    watch someone play
+                    Madden, 2K, Call of Duty, LoL or another game, Twitch offers it. It’s the perfect place to get
+                    started whenever you have
+                    free time.</p>
+                <div id="twitch-embed"></div>
+                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                <script type="text/javascript">
+                    new Twitch.Embed("twitch-embed", {
+                        width: 854,
+                        height: 580,
+                        channel: "shroud",
+                    });
+                </script>
+                <h3><a href="https://sickodds.com/news/where-to-watch-esports-online" target="_blank">Source</a></h3>
+            </section>
+            <section class="waytowatch" id="youtube">
+                <img src="img/youtube-overlay.jpg" width="100%" />
+                <h2><a href="https://www.youtube.com/gaming" target="_blank">Youtube Gaming</a></h2>
+                <p>YouTube Gaming, Google’s rival platform to Twitch, followed on from Twitch’s success by allowing for
+                    gamers to live stream their gameplay directly to the YouTube platform and keep a catalogue of their
+                    past
+                    streams for their fans to enjoy instantly. With YouTube already having a massive audience that were
+                    searching for gaming videos, with Minecraft tutorials and Call of Duty montages being some of the
+                    most
+                    popular videos, it was a logical step to expand into live streaming.
+                    <br><br>
+                    Even when there aren’t live matches going on, YouTube archives offer plenty of replays for
+                    people to familiarize
+                    themselves with eSports. Of course, one of the most entertaining eSports is Rocket League, which is
+                    a must-watch for
+                    sports fans looking for that perfect combination of racing games and soccer. Whatever type of
+                    eSports you desire,
+                    YouTube offers it.
+                </p>
+                <iframe width="100%" height="480" src="https://www.youtube.com/embed/Xka4OLgzW9Q">
+                </iframe>
+                <h3><a href="https://sickodds.com/news/where-to-watch-esports-online" target="_blank">Source</a></h3>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2020 World of Esports</p>
+    </footer>
+</body>
+
+</html>
